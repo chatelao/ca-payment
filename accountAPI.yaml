@@ -951,6 +951,7 @@ components:
 
     Iso20022ReportReference:
       title: ISO20022 Report Reference
+      description: The ISO20022 report reference object.
       type: object
       properties:
         name:
