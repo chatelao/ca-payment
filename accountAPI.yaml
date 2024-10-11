@@ -1166,10 +1166,12 @@ components:
     Iso20022ReportReference052:
       title: ISO 20022 Report Reference
       type: object
+      description: The referenced ISO20022 report (camt.052).
       properties:
         id:
           type: string
           description: The unique identifier of the referenced ISO20022 report.
+          example: '8265333'
         schemaVersion:
           type: string
           example: camt.052.001.08
@@ -1188,7 +1190,7 @@ components:
         account:
           $ref: '#/components/schemas/PaymentIbanAccount'
         dateTime:
-          $ref: '#/components/schemas/dateTime'
+          $ref: '#/components/schemas/DateTime'
 
     LinksPagination:
       title: Pagination Links
