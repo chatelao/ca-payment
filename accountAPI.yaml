@@ -1189,7 +1189,6 @@ components:
           $ref: '#/components/schemas/PaymentIbanAccount'
         dateTime:
           $ref: '#/components/schemas/dateTime'
-          description: The end date of the transaction query period.
 
     LinksPagination:
       title: Pagination Links
