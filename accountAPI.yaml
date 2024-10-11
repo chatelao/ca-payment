@@ -460,7 +460,7 @@ paths:
         '501':
           $ref: '#/components/responses/standard501'
         '503':
-          $ref: '#/components/responses/standard503'   
+          $ref: '#/components/responses/standard503'
 
 # -------------------------
 # -------- Models ---------
@@ -1174,15 +1174,15 @@ components:
           type: string
           example: camt.052.001.08
           description: The delivered schema version of the referenced ISO20022 report.
-          pattern: 'camt\.052\.[0-9]{3}\.[0-9]{2}'
+          pattern: camt\.052\.[0-9]{3}\.[0-9]{2}
         type:
           type: string
           enum:
             - incremental
             - full
           example: full
-          description: >
-           Indicates the type of ISO 20022 report being referenced. 
+          description: |
+           Indicates the type of ISO 20022 report being referenced.
            * incremental: Contains only the transactions that occurred since the last intraday statement (camt.052).
            * full: Contains all transactions since the last regular account statement (camt.053).
         account:
