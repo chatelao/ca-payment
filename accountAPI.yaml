@@ -1106,6 +1106,12 @@ components:
       description: A date.
       example: 2018-04-13
 
+    DateTime:
+      type: string
+      format: date-time
+      description: The date and time formatted as YYYY-MM-DDTHH:mm:ssZ.
+      example: 2018-04-13T11:11:11Z
+
     Designation:
       type: string
       maxLength: 140
